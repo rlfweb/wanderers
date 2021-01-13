@@ -4,7 +4,7 @@
 }
 
 @keyframes spin {
-  0% { 
+  0% {
     transform: rotate(0);
   }
   100% {
@@ -38,7 +38,8 @@ header h1 {
   margin: 10px 0 0 0;
 }
 
-a.previous, a.next {
+a.previous,
+a.next {
   position: fixed;
   top: 50%;
   width: 70px;
@@ -53,12 +54,12 @@ a.previous, a.next {
 
 a.previous {
   left: 48px;
-  background-image: url(arrow-left.svg);
+  background-image: url(/images/arrow-left.svg);
 }
 
 a.next {
   right: 48px;
-  background-image: url(arrow-right.svg);
+  background-image: url(/images/arrow-right.svg);
 }
 
 a.previous:hover {
@@ -68,10 +69,11 @@ a.previous:hover {
 
 a.next:hover {
   right: 28px;
-  width: 90px
+  width: 90px;
 }
 
-a.previous span, a.next span {
+a.previous span,
+a.next span {
   display: none;
 }
 
