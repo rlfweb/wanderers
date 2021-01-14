@@ -16,6 +16,9 @@ wiper.appendChild(wiperHolder);
 
 bodyTag.appendChild(wiper);
 
+// not recommended for large sites with lots of links on a page (would slow it up), but for a simple site, it speeds it up by preloading images that are linked to from the current viewport
+barba.use(barbaPrefetch);
+
 barba.init({
   debug: true,
   transitions: [
