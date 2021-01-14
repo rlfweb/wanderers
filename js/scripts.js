@@ -7,7 +7,7 @@ wiperImage.setAttribute("src", "/images/logo.svg");
 
 const wiperHolder = document.createElement("div");
 const wiperText = document.createElement("h2");
-wiperText.innerHTML = "Rebecca";
+// wiperText.innerHTML = "Rebecca";
 
 wiperHolder.appendChild(wiperText);
 
@@ -46,6 +46,8 @@ barba.init({
       },
 
       beforeEnter({ current, next, trigger }) {
+        wiperText.innerHTML = next.container.getAttribute("data-title");
+
         return new Promise((resolve) => {
           const timeline = gsap.timeline({
             defaults: {
