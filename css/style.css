@@ -96,6 +96,7 @@ div.wiper {
   background-color: #000;
   transform: translate(-100%, 0);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -103,4 +104,16 @@ div.wiper {
 div.wiper img {
   width: 75px;
   animation: spin 5s infinite linear;
+}
+
+div.wiper div {
+  margin: 10px 0 0 0;
+  height: 90px;
+  overflow: hidden;
+}
+
+div.wiper h2 {
+  font-size: 60px;
+  line-height: 1.5;
+  height: 90px;
 }
